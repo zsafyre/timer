@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  background-color: black;
+  background-image: url(/timer/imgs/background.png);
+  height: 100vh;
+}
+
+.container h1 {
+  color: #6e00ea;
+}
+
+.timer {
+  display: flex;
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #5302cc;
+  min-width: 90px;
+}
+
+.sep {
+  padding: 0 10px;
+  color: white;
+}
+
+#msec {
+  font-size: 30px;
+  color: #ae00ff;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    238.88deg,
+    #ae00ff 21.87%,
+    #6e00ea 52.52%,
+    #5302cc 94.19%
+  );
+}
+
+#startbtn {
+  background: linear-gradient(
+    238.88deg,
+    #ae00ff 21.87%,
+    #6e00ea 52.52%,
+    #5302cc 94.19%
+  );
+  color: fff;
+}
+
+#pausebtn,
+#resumebtn {
+  display: none;
+}
